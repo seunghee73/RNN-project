@@ -183,4 +183,6 @@
     * 이를 해소하기 위하여 RNN 모델의 특성에 집중하였다. RNN 모델은 고정된 길이의 sequential data를 입력으로 사용한다. 즉, 하나의 데이터는 sequential length만큼이면 충분하다. 따라서 목적지에 도착할 때까지가 아니라 sequential length가 채워지면 **새로운 시작점과 목적지와 속력**을 선택한다. 시작점도 바꾸는 이유는 중앙 쪽에 밀집될 수 밖에 없는 데이터를 조금이나마 더 분산시키기 위함이다.
     * 그리고 전체 Field를 partition하여 학습을 진행한다. 각각 센서 노드의 상황에 대한 데이터를 충분히 확보하기 위함이다. 또한 이렇게 설정함으로써 객체가 움직일 수 있는 범위를 센서 노드들이 배치된 곳보다 조금 더 크게 설정할 수 있다. 이를 통해 가장자리 쪽의 데이터를 충분히 확보할 수 있다.
 
+<br>
+
 [1] Yoon, Jungkeun, Mingyan Liu, and Brian Noble. "Random waypoint considered harmful." *IEEE INFOCOM 2003. Twenty-second Annual Joint Conference of the IEEE Computer and Communications Societies (IEEE Cat. No. 03CH37428)*. Vol. 2. IEEE, 2003.
