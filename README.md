@@ -1,4 +1,4 @@
-Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wireless Sensor Networks
+### Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wireless Sensor Networks
 
 [**2021.04 *ICAIIC* 국제학술대회 발표**](https://ieeexplore.ieee.org/abstract/document/9415235)
 
