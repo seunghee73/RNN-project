@@ -53,29 +53,6 @@
 
 #### 논문 정리
 
-![슬라이드1](README.assets/슬라이드1-16547743188251.PNG)  
-![슬라이드2](README.assets/슬라이드2-16547743249992.PNG)  
-![슬라이드3](README.assets/슬라이드3-16547743286403.PNG)  
-![슬라이드4](README.assets/슬라이드4-16547743316314.PNG)  
-![슬라이드5](README.assets/슬라이드5-16547743349595.PNG)  
-![슬라이드6](README.assets/슬라이드6-16547743380506.PNG)  
-![슬라이드7](README.assets/슬라이드7.PNG)  
-![슬라이드8](README.assets/슬라이드8.PNG)  
-![슬라이드9](README.assets/슬라이드9.PNG)  
-![슬라이드10](README.assets/슬라이드10.PNG)  
-![슬라이드11](README.assets/슬라이드11.PNG)  
-![슬라이드12](README.assets/슬라이드12.PNG)  
-![슬라이드13](README.assets/슬라이드13.PNG)  
-![슬라이드14](README.assets/슬라이드14-16547744461967.PNG)  
-![슬라이드15](README.assets/슬라이드15.PNG)  
-![슬라이드16](README.assets/슬라이드16.PNG)  
-![슬라이드17](README.assets/슬라이드17.PNG)  
-![슬라이드18](README.assets/슬라이드18.PNG)  
-![슬라이드19](README.assets/슬라이드19.PNG)  
-![슬라이드20](README.assets/슬라이드20.PNG)  
-![슬라이드21](README.assets/슬라이드21.PNG)  
-![슬라이드22](README.assets/슬라이드22.PNG)  
-
 <br>
 
 #### 객체 이동 모델 구현 및 제안한 최적 듀티 사이클 모드 산출 방법이 반영된 디지털 트윈 구현  
