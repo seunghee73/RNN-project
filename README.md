@@ -15,7 +15,9 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
 역할 : 지도 교수님의 지도를 받은 단독 연구  
 
 * 에너지 효율성과 객체 추적 정확성, 트레이드 오프 관계인 두 문제를 최적화 하기 위해서 필요한 상황에 대해 생각해보았다. 그리고 이 상황을 수학적으로 유도하여 시스템 모델 구현에 적용하였다. 
+
 * 실제 상황에서 객체가 센서 노드에 들어가고 나오는 정확한 시간을 예측하기는 어렵다. 예측하는 것을 성공하더라도 이 값을 이용하여 다음 센서 노드의 최적 상태에 대해 도출하는 것은 쉽지 않은 일이다. 따라서 이를 예측하는 딥러닝 모델을 구현하고자 하였다. 
+
 * 딥러닝 모델의 경우, 지도 학습을 사용하기 때문에 입력과 출력 데이터셋이 필요하다. 앞서 말한대로 실제 상황에 객체가 센서 노드에 들어가고 나오는 정확한 시간을 예측하기는 어렵기 때문에 이를 추출할 수 있는 가상의 디지털 트윈을 구현하였다. 
   * 디지털 트윈에는 센서 노드의 배치, 객체 이동 모델, 제안한 최적 듀티 사이클 모드 산출 방법 등이 반영되어있다. 
   * 이를 Matlab을 이용하여 구현하였는데 이는 Matlab이 시뮬레이션, 그래프 등을 시각화하는 것에 특화된 플랫폼이기 때문이다. 
@@ -42,7 +44,9 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
 #### contribution
 
 * 무선 센서 네트워크의 센서가 움직이는 객체에 대해서 최소 감지 조건을 만족할 수 있도록 최적의 듀티 사이클을 조절하는 메커니즘을 제안한다.
+
 * 지도 학습을 사용하는 RNN의 학습 데이터를 생성하기 위해 디지털 트윈을 구현한다. 디지털 트윈에서 센서는 움직이는 객체에 대해서 제안된 듀티 사이클 조절 메커니즘을 만족하며 동작하도록 구현한다.
+
 * 디지털 트윈을 통해 추출된 데이터를 이용하여 객체의 움직임에 따라 최적의 듀티 사이클을 예측할 수 있도록 RNN 모델을 학습시키고 결과를 확인한다. 
 
 <br>
@@ -50,47 +54,26 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
 #### 논문 정리
 
 ![슬라이드1](README.assets/슬라이드1-16547743188251.PNG)  
-
 ![슬라이드2](README.assets/슬라이드2-16547743249992.PNG)  
-
 ![슬라이드3](README.assets/슬라이드3-16547743286403.PNG)  
-
 ![슬라이드4](README.assets/슬라이드4-16547743316314.PNG)  
-
 ![슬라이드5](README.assets/슬라이드5-16547743349595.PNG)  
-
 ![슬라이드6](README.assets/슬라이드6-16547743380506.PNG)  
-
 ![슬라이드7](README.assets/슬라이드7.PNG)  
-
 ![슬라이드8](README.assets/슬라이드8.PNG)  
-
 ![슬라이드9](README.assets/슬라이드9.PNG)  
-
 ![슬라이드10](README.assets/슬라이드10.PNG)  
-
 ![슬라이드11](README.assets/슬라이드11.PNG)  
-
 ![슬라이드12](README.assets/슬라이드12.PNG)  
-
 ![슬라이드13](README.assets/슬라이드13.PNG)  
-
 ![슬라이드14](README.assets/슬라이드14-16547744461967.PNG)  
-
 ![슬라이드15](README.assets/슬라이드15.PNG)  
-
 ![슬라이드16](README.assets/슬라이드16.PNG)  
-
 ![슬라이드17](README.assets/슬라이드17.PNG)  
-
 ![슬라이드18](README.assets/슬라이드18.PNG)  
-
 ![슬라이드19](README.assets/슬라이드19.PNG)  
-
 ![슬라이드20](README.assets/슬라이드20.PNG)  
-
 ![슬라이드21](README.assets/슬라이드21.PNG)  
-
 ![슬라이드22](README.assets/슬라이드22.PNG)  
 
 <br>
@@ -100,21 +83,13 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
 * 객체 이동 모델에 대한 조사  
   * 아래는 객체 이동 모델에 대해서 찾아본 결과이다. 이후에 모델을 수정하게 되지만 Random Waypoint Model을 이용하는 것이 좋겠다고 판단하고 시뮬레이션 구현을 시작했다.
 
-
 ![슬라이드1](README.assets/슬라이드1-16547786503718.PNG)  
-
 ![슬라이드2](README.assets/슬라이드2-16547786573139.PNG)  
-
 ![슬라이드3](README.assets/슬라이드3-165477866240410.PNG)  
-
 ![슬라이드4](README.assets/슬라이드4-165477867075411.PNG)  
-
 ![슬라이드5](README.assets/슬라이드5-165477867573212.PNG)  
-
 ![슬라이드6](README.assets/슬라이드6-165477867942913.PNG)  
-
 ![슬라이드7](README.assets/슬라이드7-165477868304214.PNG)  
-
 ![슬라이드8](README.assets/슬라이드8-165477868722715.PNG)  
 
 <br>
@@ -136,12 +111,15 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
   ![image-20220609220249411](README.assets/image-20220609220249411.png)
 
   * 센서 노드의 위치와 객체의 위치 정보를 이용하여 센서 노드가 객체를 감지했는지 여부에 대해서 계산한다.
+  
   * 이렇게 만들어진 센서 노드의 위치와, 센서 노드의 객체 감지 여부를 이용하여 **RNN 모델의 입력 데이터**를 만들 수 있다.  
 
   ![image-20220609220657579](README.assets/image-20220609220657579.png)    
 
   * 객체가 센서 노드의 커버리지를 지나가는데 걸리는 시간을 이용하여 최적의 듀티 사이클 모드를 계산한다. 이를 위해서 시뮬레이션에서 객체가 센서 노드를 지나가는데 걸리는 시간을 추출해야한다.  
-  * 위와 그림과 같은 과정을 통해 수학적으로 구한다.  
+  
+  * 위와 그림과 같은 과정을 통해 수학적으로 구한다. 
+   
   * 객체의 위치 정보, 객체가 센서 노드의 커버리지를 지나가는데 걸리는 시간을 제안한 최적 듀티 사이클 모드 계산 방법에 적용하여 **RNN 모델의 출력 데이터인 최적 듀티 사이클 모드**를 결정한다.   
 
 <br>
@@ -183,7 +161,8 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
 
   ![image-20220609223944296](README.assets/image-20220609223944296.png)  
 
-  * 위와 같은 결과가 나왔다. 90퍼센트 대의 정확도가 나오는 것을 보아 LSTM 모델 구현 자체의 문제는 아니라고 판단할 수 있었다. **LSTM 모델이 구조상으로 복잡해진 데이터에서 적절한 대응이 안 되는 것**이라고 판단했다. 
+  * 위와 같은 결과가 나왔다. 90퍼센트 대의 정확도가 나오는 것을 보아 LSTM 모델 구현 자체의 문제는 아니라고 판단할 수 있었다. **LSTM 모델이 구조상으로 복잡해진 데이터에서 적절한 대응이 안 되는 것**이라고 판단했다.
+  
   *  90% 대의 정확도도 높은 편이기는 하지만 더 높은 정확도가 나오지 못하는 이유에 대해서 고민해보았다.
 
   ![image-20220609224331580](README.assets/image-20220609224331580.png)  
@@ -197,6 +176,7 @@ Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wir
   * LSTM 모델 구조 수정
     * 심층 신경망 수업에서 교수님이 지나가며 요즘 대부분 딥러닝 모델의 경우에는 Batch Normalization이 필수적이라는 말씀을 하셨다. 이를 놓치지 않고 모델에 추가하여 LSTM 모델 구조를 수정하니 정말 정확도가 개선되는 것을 볼 수 있었다. 
       * Batch Normalization은 각 Batch 단위 별로 Normalization을 진행하는 것을 의미한다. Batch에 따라서, 혹은 layer에 따라서 입력 데이터의 분포가 다를 수 있지만 Normalization을 통해 분포를 균일화한다.
+    
   * 디지털 트윈 구조 수정
     * Random Waypoint model에는 치명적인 단점이 있었다. Random이라는 것이 공평하게 일어날 것 같지만 그렇지 않다는 점이다. [1] Sequential data에 적용된 Random Waypoint Model은 시간이 지날수록 평균 속력이 낮아진다. 무작위로 속력을 선택하기는 하지만 느린 속력을 선택한 경우 목적지까지 도달하는데 오랜 시간이 걸리기 때문에 전체 데이터에서 느린 속력에 대한 데이터의 지분이 많아지는 문제가 발생하기 때문이다. 이는 결국 데이터셋의 불균형을 불러온다.
     * 또한 구조상 객체가 필드의 중앙 쪽을 지나가는 데이터가 많아지고 가장자리를 지나가는 데이터는 적어질 수 밖에 없다.
