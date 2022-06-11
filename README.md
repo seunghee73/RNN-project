@@ -52,6 +52,8 @@
 <br>
 
 #### 논문 정리
+[Recurrent Neural Network-Based Optimal Sensing Duty Cycle Control Method for Wireless Sensor Networks](https://github.com/seunghee73/RNN-project/blob/master/Presentation.md)
+
 
 <br>
 
